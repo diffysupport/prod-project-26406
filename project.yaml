@@ -1,5 +1,5 @@
 basic:
-    name: 'Client Center Sage'
+    name: 'Client Center Websites'
     environments:
         production: 'https://stayvisibleclientportal.com/'
         staging: 'https://test-stayvisible-clientportal.pantheonsite.io/'

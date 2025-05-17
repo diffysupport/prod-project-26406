@@ -1,8 +1,8 @@
 basic:
     name: 'Client Center Sage'
     environments:
-        production: 'https://clientcenter360.com/'
-        staging: 'https://test-clientcenter360-sage.pantheonsite.io/'
+        production: 'https://stayvisibleclientportal.com/'
+        staging: 'https://test-stayvisible-clientportal.pantheonsite.io/'
         development: ''
     breakpoints:
         - 640
@@ -10,16 +10,17 @@ basic:
         - 1200
     pages:
         - /
-        - browse-by-theme
-        - contact
+        - browse-ideas-by-theme
+        - contact-us
         - whats-trending
+        - search
         - portal
         - project-profile
         - lets-connect
         - register-form-2
-        - browse-by-market
-        - search
-        - website-feedback
+        - best-sellers
+        - sub_category_post/back-to-work-resources
+        - register-form
         - support
     monitoring:
         days: {  }
@@ -39,7 +40,19 @@ advanced:
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10

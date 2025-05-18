@@ -1,8 +1,8 @@
 basic:
     name: 'Client Center Websites'
     environments:
-        production: 'https://stayvisibleclientportal.com/'
-        staging: 'https://test-stayvisible-clientportal.pantheonsite.io/'
+        production: 'https://promomonster-clientportal.com/'
+        staging: 'https://test-promomonster-clientportal.pantheonsite.io/'
         development: ''
     breakpoints:
         - 640
@@ -17,11 +17,8 @@ basic:
         - portal
         - project-profile
         - lets-connect
-        - register-form-2
-        - best-sellers
-        - sub_category_post/back-to-work-resources
         - register-form
-        - support
+        - best-sellers
     monitoring:
         days: {  }
         type: ''

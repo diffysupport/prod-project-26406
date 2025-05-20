@@ -5,9 +5,12 @@ basic:
         staging: 'https://test-promomonster-clientportal.pantheonsite.io/'
         development: ''
     breakpoints:
+        - 320
         - 640
+        - 768
         - 1024
         - 1200
+        - 1440
     pages:
         - /
         - browse-ideas-by-theme
@@ -30,10 +33,10 @@ advanced:
     mask: ''
     remove: ''
     isolate: ''
-    delay: 15
-    scroll: true
+    delay: 10
+    scroll: false
     headers:
-        - { header: '', value: '' }
+        - null
     cookies: ''
     custom_js: ''
     custom_css: ''

@@ -1,9 +1,13 @@
 basic:
     name: 'Client Center Websites'
     environments:
-        production: 'https://promomonster-clientportal.com/'
-        staging: 'https://test-promomonster-clientportal.pantheonsite.io/'
+        production: 'https://sage.clientcenter360.com/'
+        staging: 'https://test-clientcenter360-sage.pantheonsite.io/'
         development: ''
+    basicAuth:
+        production: { user: '', password: '' }
+        staging: { user: '', password: '' }
+        development: { user: '', password: '' }
     breakpoints:
         - 320
         - 640
@@ -13,15 +17,20 @@ basic:
         - 1440
     pages:
         - /
-        - browse-ideas-by-theme
-        - contact-us
-        - whats-trending
-        - search
-        - portal
-        - project-profile
-        - lets-connect
-        - register-form
-        - best-sellers
+        - /browse-by-theme
+        - /contact
+        - /whats-trending
+        - /search
+        - /portal
+        - '/portal/?ppage=list&module=Themes&origin=CRM'
+        - /project-profile
+        - /lets-connect
+        - /register-form-2
+        - /browse-by-market
+        - /best-sellers
+        - /register-form
+        - /website-feedback
+        - /support
     monitoring:
         days: {  }
         type: ''
@@ -32,16 +41,19 @@ basic:
 advanced:
     mask: ''
     remove: ''
-    isolate: ''
     delay: 10
     scroll: false
     headers:
-        - null
+        - { header: '', value: '' }
     cookies: ''
     custom_js: ''
     custom_css: ''
     mock_content:
         - { selector: '', type: title }
+    sensitivity: 5
+    night_mode: false
+    retina_images: false
+    single_ip: false
     login:
         type: none
         click_element: false

@@ -1,8 +1,8 @@
 basic:
     name: 'Client Center Websites'
     environments:
-        production: 'https://sage.clientcenter360.com/'
-        staging: 'https://test-clientcenter360-sage.pantheonsite.io/'
+        production: 'https://promomonster-clientportal.com/'
+        staging: 'https://test-promomonster-clientportal.pantheonsite.io/'
         development: ''
     basicAuth:
         production: { user: '', password: '' }
@@ -17,21 +17,15 @@ basic:
         - 1440
     pages:
         - /
-        - /browse-by-theme
-        - /contact
+        - /browse-ideas-by-theme
+        - /contact-us
         - /whats-trending
         - /search
         - /portal
-        - '/portal/?ppage=list&module=Themes&origin=CRM'
         - /project-profile
         - /lets-connect
-        - /register-form-2
-        - /browse-by-market
-        - /best-sellers
         - /register-form
-        - /website-feedback
-        - /support
-        - /sub_category_post/back-to-work-all-products
+        - /best-sellers
     monitoring:
         days: {  }
         type: ''
